@@ -1,6 +1,7 @@
 function (user, context, callback) {
-    if (user.app_metadata && user.app_metadata.pret_customer_id) {
-      context.accessToken["http://pret/customerId"] = user.app_metadata.pret_customer_id;
-    }
-    return callback(null, user, context);
+  const namespace = "http://pret/customerId";
+  if (user?.app_metadata?.pret_customer_id && context?.accessToken) {
+    context.accessToken[namespace] = user.app_metadata.pret_customer_id;
   }
+  return callback(null, user, context);
+}
