@@ -1,0 +1,25 @@
+{
+  "name": "auth0-rule",
+  "version": "1.0.0",
+  "description": "Auth0-rule ",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cemozturan/auth0-rule.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cemozturan/auth0-rule/issues"
+  },
+  "homepage": "https://github.com/cemozturan/auth0-rule#readme",
+  "devDependencies": {
+    "jest": "^26.4.2"
+  }
+}
